@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Buddy</title>
+    <script src="https://kit.fontawesome.com/d91f0db9b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./Assets/Logo.png" alt="" id="logo"><br>
+        <p>*Manage your plant remotely</p>
+        <label for="Name" id="na">Plant Name: </label>
+        <input type="text" id="name" name="Name" placeholder="Cactus" disabled>
+        <label for="Type" id="na1">Type: </label>
+        <input type="text" id="name" name="Type" placeholder="Cactus" disabled>
+        <div class="content">
+            <div class="temp">
+                <div class="display1">
+                    --
+                </div>
+                <p>Temperature</p>
+            </div>
+            <div class="waterlvl">
+                <div class="display2">
+                    --
+                </div>
+                <p>Water Level</p>
+                <br>
+            </div>
+            <div class="humidity">
+                <div class="display3">
+                    --
+                </div>
+                <p>Humidity</p>
+            </div>
+        </div>
+        <div class="Power">
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+            <div id="timer"></div>
+        </div>
+        <span id="bulb"><i class="fa-regular fa-lightbulb"></i></span>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
