@@ -179,3 +179,71 @@ input:checked + .slider:before {
     background-color: white;
     border-radius: 100vw;
 }
+
+@media (max-width: 430px) {
+    #logo{
+        width: 80vw;
+    }
+    .container{
+        /* height: 100vw; */
+        height: 120vw;
+    }
+    .container p{
+        text-align: center;
+        font-size: 4vw;
+    }
+    .content{
+        /* display: none; */
+    }
+    .waterlvl{
+        border: 0;
+        background-color: #2B7A78;
+    }
+    .content{
+        background-color: #2B7A78;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .display1{
+        position: absolute;
+        left: 20vw;
+        top: 60vw;
+    }
+    .display2{
+        position: absolute;
+        left: 20vw;
+        top: 80vw;
+    }
+    .display3{
+        position: absolute;
+        top: 100vw;
+        left: 20vw;
+    }
+    .temp p{
+        position: absolute;
+        top: 65vw;
+        left: 45vw;
+    }
+    .waterlvl p{
+        position: absolute;
+        top: 85vw;
+        left: 45vw;
+    }
+    .humidity p{
+        position: absolute;
+        top: 105vw;
+        left: 45vw;
+    }
+    #bulb{
+        top: 50.5vw;
+    }
+    #timer{
+        top: 50.5vw;
+    }
+    input:checked + .slider:before {
+        /* -webkit-transform: translateX(26px); */
+        /* -ms-transform: translateX(26px); */
+        transform: translateX(1.4vw);
+    }
+}
