@@ -186,7 +186,7 @@ input:checked + .slider:before {
     }
     .container{
         /* height: 100vw; */
-        height: 180vw;
+        height: 200vw;
     }
     .container p{
         text-align: center;
