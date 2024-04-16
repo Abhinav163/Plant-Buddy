@@ -186,14 +186,14 @@ input:checked + .slider:before {
     }
     .container{
         /* height: 100vw; */
-        height: 120vw;
+        height: 180vw;
     }
     .container p{
         text-align: center;
         font-size: 4vw;
     }
     .content{
-        /* display: none; */
+        display: none;
     }
     .waterlvl{
         border: 0;
@@ -208,42 +208,91 @@ input:checked + .slider:before {
     .display1{
         position: absolute;
         left: 20vw;
-        top: 60vw;
+        top: 80vw;
     }
     .display2{
         position: absolute;
         left: 20vw;
-        top: 80vw;
+        top: 100vw;
     }
     .display3{
         position: absolute;
-        top: 100vw;
+        top: 120vw;
         left: 20vw;
     }
     .temp p{
         position: absolute;
-        top: 65vw;
+        top: 85vw;
         left: 45vw;
     }
     .waterlvl p{
         position: absolute;
-        top: 85vw;
+        top: 105vw;
         left: 45vw;
     }
     .humidity p{
         position: absolute;
-        top: 105vw;
+        top: 125vw;
         left: 45vw;
     }
     #bulb{
-        top: 50.5vw;
+        left: 15vw;
+        top: 51.5vw;
     }
     #timer{
-        top: 50.5vw;
+        left: 83vw;
+        top: 51.5vw;
     }
     input:checked + .slider:before {
         /* -webkit-transform: translateX(26px); */
         /* -ms-transform: translateX(26px); */
         transform: translateX(1.4vw);
+    }
+    #name, #na, #na1 {
+        font-size: 3vw;
+    }
+    #name{
+        width: 15vw;
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 3vw;
+        top: 0;
+        left: 0;
+        margin-top: 2vw;
+        height: 1.75vw;
+    }
+    
+    .switch input { 
+        opacity: 0;
+        width: 0;
+        height: 0;
+        top: 0;
+        position: absolute;
+        left: 0;
+    }
+    
+    .slider {
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 1.4vw;
+        width: 1.4vw;
+        left: 0.1vw;
+        bottom: 0.2vw;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
     }
 }
